@@ -1,0 +1,10 @@
+{
+  "name": "9990 Words",
+  "short_name": "9990 Words",
+  "description": "999 word puzzles",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#1B95E4",
+  "background_color": "#1B95E4"
+}

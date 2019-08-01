@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>9990 Words / Puzzle </title>
+    <meta name="description" content="9990 Words - 999 word puzzles">
+    <meta name="author" content="Russell Beattie">
+    <meta name="application-name" content="9990 Words">
+    <meta name="theme-color" content="#000000">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="title">9990 Words</h1>
+            <h2 class="titlenum"></h1>
+            <div class="timer" style="display:none"></div>
+        </div>
+        <div class="home view" style="display:none">
+            <img src="./assets/clever-icon-192.png">
+            <h3>
+                999 word puzzles.
+            </h3>
+            <div class="puzhome">
+                <form class="puz-form">
+                    Enter a puzzle number, or click the 'random' button: <br>
+                    <input type="number" min="0" max="999" name="puznum" class="puznum" value="">
+                    <button class="go-btn btn">Go</button>
+                    <button class="random-btn btn">Random</button>
+                </form>
+            </div>
+
+            <div class="wins" style="display:none"></div>
+            <div class="credits">
+                Developed by <a href="http://www.russellbeattie.com" tabindex="-1">Russell Beattie</a>
+            </div>
+        </div>
+        <div class="puzzle view" style="display:none">
+
+            <div class="clues"></div>
+            <div class="answer">
+                <span class="answertext"></span>
+                <span class="reset">X</span>
+            </div>
+            <div class="nav">
+                <span class="gohome" tabindex="0">Home</span>
+                <span class="restart" tabindex="0">Restart</span>
+                <span class="sort" tabindex="0">Sort</span>
+                <span class="shuffle" tabindex="0">Shuffle</span>
+                <span class="clear" tabindex="0">Clear</span>
+            </div>
+            <div class="squares"></div>
+            <div class="gameover" style="display:none">
+                <h1>Great Job!</h1>
+                <h3 class="yourtime">Your time: 00:00</h3>
+                <div class="nav">
+                    <span class="next" tabindex="0">Next Puzzle!</span>
+                    <span class="share-link" tabindex="0">
+                        <a target="_blank" href="">Share</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./puzzles.js"></script>
+    <script src="./app.js"></script>
+    <script>
+
+        App.init();
+
+    </script>
+</body>
+
+</html>
