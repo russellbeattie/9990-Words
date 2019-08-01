@@ -48,7 +48,7 @@ App.init = function() {
             e.preventDefault();
             if($('.titlenum').textContent !== ''){
                 navigator.share({
-                    title: 'Clever.io puzzle #' + App.puzzleNum,
+                    title: '9990 Words puzzle #' + App.puzzleNum,
                     text: 'Check out this word puzzle!',
                     url: document.location.href,
                 });
@@ -423,7 +423,11 @@ App.puzzleView = Object.assign({}, App.view, {
         e.preventDefault();
         if(navigator.share){
             navigator.share({
+<<<<<<< HEAD
                 title: 'Clever.io puzzle solved!',
+=======
+                title: '999 Words puzzle solved!',
+>>>>>>> First commit
                 text: 'I finished this word puzzle in ' + App.formatTime(this.secs) + ' minutes. Try it for yourself! ',
                 url: document.location.href,
             });
